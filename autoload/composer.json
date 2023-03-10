@@ -1,0 +1,18 @@
+{
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "youremail@example.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\MyClasses\\": "app/MyClasses/"
+        },
+        "files": ["example.php", "helpers.php"]
+    }
+}

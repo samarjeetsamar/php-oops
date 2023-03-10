@@ -1,8 +1,7 @@
 <?php
 
 class MyClass {
-
-
+    
     public static $count = 0;
 
     public function preText(){
@@ -17,3 +16,6 @@ class MyClass {
 
 //echo MyClass::preText();
 echo MyClass::helloWorld();
+
+$obj =  new MyClass;
+echo $obj->preText();
