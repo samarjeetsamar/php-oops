@@ -32,7 +32,7 @@ echo myHelperFunction() . "\n";
 
 //use of monolog package
 $log = new Logger('name');
-$log->pushHandler(new StreamHandler('./logger.log', Logger::WARNING));
+$log->pushHandler(new StreamHandler(__DIR__ .'/logger.log', Logger::WARNING));
 
 // add records to the log
 $log->warning('Foo');

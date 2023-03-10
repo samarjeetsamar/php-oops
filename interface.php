@@ -1,19 +1,19 @@
 <?php
 
 interface PaymentGateway {
-   public function charge($amount);
+   	public function charge($amount);
 }
 
 class StripePaymentGateway implements PaymentGateway {
-   public function charge($amount) {
+   	public function charge($amount) {
       // use Stripe API to charge $amount
-   }
+   	}
 }
 
 class PaypalPaymentGateway implements PaymentGateway {
-   public function charge($amount) {
+   	public function charge($amount) {
       // use PayPal API to charge $amount
-   }
+   	}
 }
 
 class Order {
@@ -26,13 +26,12 @@ class Order {
     }
 
     public function place() {
-            $data = $this->paymentGateway->charge($this->total());
-            
+        $data = $this->paymentGateway->charge($this->total());
         // place the order
     }
 
     private function total(){
-            return 20;
+        return 20;
     }
 }
 
