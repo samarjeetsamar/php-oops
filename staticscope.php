@@ -1,14 +1,14 @@
 <?php
 
 class MyClass {
-    private $count = 0;
+    private static $count = 0;
 
     public function __construct() {
-        $this->count++;
+        self::$count++;
     }
 
     public static function getCount() {
-        return $this->count;
+        return self::$count;
     }
 }
 

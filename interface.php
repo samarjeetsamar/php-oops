@@ -38,3 +38,8 @@ class Order {
 $stripeGateway = new StripePaymentGateway();
 $order = new Order($stripeGateway);
 $order->place();
+
+
+$paypal = new PaypalPaymentGateway();
+$order2 = new Order($paypal);
+$order2->place();
